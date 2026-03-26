@@ -4,8 +4,8 @@ generate_hcl "_tmg_backend.tf" {
     # Terraform backend definition
     terraform {
       backend "s3" {
-        bucket  = "terraform-state"
-        key     = "${terramate.stack.path.relative}.tfstate"
+        bucket = "terraform-state"
+        key    = "${terramate.stack.path.relative}.tfstate"
 
         profile = "my-aws-account"
         region  = "eu-central-1"
