@@ -2,10 +2,10 @@
 
 terraform {
   backend "s3" {
-    bucket       = "terraform-state"
+    bucket       = "swisstopo-playground-brice-schaffner-tenant-terraform-state"
     encrypt      = true
     key          = "my-module-2.tfstate"
-    profile      = "my-aws-account"
+    profile      = "swisstopo-playground-brice-schaffner"
     region       = "eu-central-1"
     use_lockfile = true
   }

@@ -4,10 +4,10 @@ generate_hcl "_tmg_backend.tf" {
     # Terraform backend definition
     terraform {
       backend "s3" {
-        bucket = "terraform-state"
+        bucket = "swisstopo-playground-brice-schaffner-tenant-terraform-state"
         key    = "${terramate.stack.path.relative}.tfstate"
 
-        profile = "my-aws-account"
+        profile = "swisstopo-playground-brice-schaffner"
         region  = "eu-central-1"
 
         encrypt      = true

@@ -4,7 +4,7 @@ terraform {
   backend "s3" {
     bucket       = "swisstopo-playground-brice-schaffner-tenant-terraform-state"
     encrypt      = true
-    key          = "my-module-1.tfstate"
+    key          = "module-used-as-remote-state.tfstate"
     profile      = "swisstopo-playground-brice-schaffner"
     region       = "eu-central-1"
     use_lockfile = true
